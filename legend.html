@@ -2,31 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Digital 2 Digest</title>
+    <title>Sanborn Map Company</title>
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <section id="history">
-        <header>
-        <img src="img/head.svg" alt="header">
-		<h1><a href="index.html">SMC</a></h1> 
+    <section>
+        <header class="row"> 
+            <div class="large-4 column">
+            	<h1><a href="index.html" title="Sanborn Map Company">S.M.C</a></h1>     
+            </div>
         </header>
         <nav class="row">
-        <ul>
-        <li><a href="history.html">History</a></li>
-        <li><a href="legend.html" class="active">Legend</a></li>
-        <li><a href="archive.html">Archive</a></li>
-        <li><a href="siteindex.html">Index</a></li>
-        </ul>
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="legend.html">Legend</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="siteindex.html">Index</a></li>
+            </ul>
         </nav>
-        <div><img src="img/headfoot.svg" alt="header"></div>
+        <img src="img/headfoot.svg" alt="header">
         <div class="row"> 
-        <div class="large-4 column">
-        <h2>Legendary</h2>
-        </div>
+        	<div class="large-4 column">
+                <h2>LEGEND</h2>
+                <img src="img/h1header.svg" alt="header">
+            </div>
         </div>
         <div class="row"> 
            <div class="large-4 column">
@@ -42,7 +44,20 @@
            </article>
            </div>
         </div>
-
     </section>
+    <script src="js/jquery-min.js"></script>
+	<script src="js/rwd_text.js"></script>
+    <script>
+    $(document).ready(function() {
+    $('header h1').scalem({
+        ratio: .25,
+		reference: 'h1'
+      });
+    $('h2').scalem({
+        ratio: 0.25,
+        reference: 'h2'
+      });
+    });
+    </script> 
 </body>
 </html>

@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Digital 2 Digest</title>
+    <title>Sanborn Map Company</title>
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
     <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../../css/layout.css" rel="stylesheet" type="text/css">
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
-<body onLoad="MM_preloadImages('img/prev.svg')">
+<body>
     <section>
-        <header>
-        <img src="../../img/head.svg" alt="header">
-		<h1><a href="../../index.html">SMC</a></h1> 
+        <header class="row"> 
+            <div class="large-4 column">
+            	<h1><a href="../../index.html" title="Sanborn Map Company">S.M.C</a></h1>     
+            </div>
         </header>
         <nav class="row">
-        <ul>
-        <li><a href="../../history.html">History</a></li>
-        <li><a href="../../legend.html">Legend</a></li>
-        <li><a href="../../archive.html">Archive</a></li>
-        <li><a href="../../siteindex.html">Index</a></li>
-        </ul>
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="legend.html">Legend</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="siteindex.html">Index</a></li>
+            </ul>
         </nav>
-        <div><img src="../../img/headfoot.svg" alt="header"></div>
+        <img src="../../img/headfoot.svg" alt="navigation">
         <div class="row"> 
-        <div class="large-4 column">
-        <h2>TEXAS</h2>
-        <img src="../../img/h1header.svg" alt="header">
-        </div>
+            <div class="large-1 medium-1 small-1 column">
+            	<img src="../img/texas.svg" alt="texas">
+            </div>
+            <div class="large-2 medium-2 small-2 column">
+            	<h2 id="text">TEXAS</h2>        
+            </div>
+            <div class="large-1 medium-1 small-1 column">
+                <img src="../img/usa.svg" alt="back-2-map">       
+            </div>
+        	<div class="large-4 column"><img src="../../img/h1header.svg" alt="header"></div>
         </div>
         <div class="row"> 
            <div class="large-4 column"><div id="gallery"><img src="1.png" alt="header"></div></div>
@@ -37,5 +43,19 @@
            <div class="large-4 column"><div id="gallery"><img src="2.png" alt="header"></div></div>
         </div>
     </section>
+    <script src="../../js/jquery-min.js"></script>
+	<script src="../../js/rwd_text.js"></script>
+	<script>
+    $(document).ready(function() {
+    $('header h1').scalem({
+        ratio: .25,
+		reference: 'h1'
+      });
+    $('h2').scalem({
+        ratio: 0.75,
+        reference: 'h2'
+      });
+    });
+    </script>    
 </body>
 </html>

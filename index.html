@@ -3,19 +3,17 @@
 <head>
     <meta charset="utf-8">
     <title>Sanborn Map Company</title>
-    <meta name="description" content="ITGM-715-OL Project A">
+    <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/layout.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-min.js"></script>
-    <script src="js/raphael-min.js"></script>
-    <script src="js/drawStates.js"></script>
+    <link href="css/layout.css" rel="stylesheet" type="text/css">  
 </head>
 <body>
-    <section id="home">
-        <header>
-            <img src="img/head.svg" alt="header">
-            <h1>SMC</h1> 
+    <section>
+        <header class="row"> 
+            <div class="large-4 column">
+            	<h1><a href="index.html" title="Sanborn Map Company">S.M.C</a></h1>     
+            </div>
         </header>
         <nav class="row">
             <ul>
@@ -56,6 +54,22 @@
         	</div>
         </div>
     </section>
+    <script src="js/jquery-min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/drawStates.js"></script>
+	<script src="js/rwd_text.js"></script>
     <script src="js/sanborn.js"></script>
+	<script>
+    $(document).ready(function() {
+    $('header h1').scalem({
+        ratio: .25,
+		reference: 'h1'
+      });
+    $('h2').scalem({
+        ratio: 0.25,
+        reference: 'h2'
+      });
+    });
+    </script> 
     </body>
 </html>

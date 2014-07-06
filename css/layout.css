@@ -178,6 +178,8 @@ code {
 	font-weight: bold;
 	color: #910b0e; }
 
+abbr { text-decoration:none;}
+
 /*  Link Styles */
 
 a:hover {cursor: pointer;}
@@ -192,10 +194,7 @@ section {
 	background-color:#FFF;
 	background-image: url(../img/handmadepaper.png);
 	-moz-box-shadow:0 0 2em rgba(0, 0, 0, 0.4);
-	box-shadow:0 0 2em rgba(0, 0, 0, 0.4); }	
-	section#home {
-		background-image: url(../img/handmadepaper.png);
-	}
+	box-shadow:0 0 2em rgba(0, 0, 0, 0.4); }
 
 article { 
 	width: 100%; 
@@ -211,16 +210,22 @@ article {
 	column-gap:2em;	} 
 	article h3 { text-align:left; border-bottom:1px double #000000;}
 
-header {
-	position:relative;}
-	header img { position:relative;}
+header { 
+	background-image: url(../img/head.svg);
+	background-position:bottom center;
+	background-size: contain;
+	background-repeat:no-repeat;}
 	header h1 {
-		text-transform:uppercase;
-		text-align:center;
-		z-index:100;
-		position:absolute;
-		width:100%;
-		top:0; }
+		font-size:5.4375em;
+		padding-top:0.5em;
+		padding-bottom:1.375em;}
+		header h1 a {
+			text-decoration:none;
+			color:#000;
+		}
+		header h1 a:hover {
+			text-decoration: underline;
+		}
 	
 figure {
 	margin: 0;
@@ -341,8 +346,6 @@ article {
 	-moz-column-rule: none; 
 	column-count: 1; 
 	column-rule: none; } 
-h1 {
-	font-size: 2rem; }
 }
 @media only screen and (min-width: 40.063em) {
 .column,
@@ -368,9 +371,6 @@ article {
 	-webkit-column-count: 2; 
 	-moz-column-count: 2; 
 	column-count: 2; }
-	
-h1 {
-	font-size: 3.625rem; 
 }
 @media only screen and (min-width: 64.063em) {
 .column,
