@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sanborn Map Company</title>
+    <meta name="description" content="ITGM-715-OL Project A">
+    <meta name="author" content="Rhett Forbes">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/drawStates.js"></script>
+</head>
+<body>
+    <section id="home">
+        <header>
+            <img src="img/head.svg" alt="header">
+            <h1>SMC</h1> 
+        </header>
+        <nav class="row">
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="legend.html">Legend</a></li>
+                <li><a href="archive.html">Archive</a></li>
+                <li><a href="siteindex.html">Index</a></li>
+            </ul>
+        </nav>
+        <img src="img/headfoot.svg" alt="header">
+        <div class="row"> 
+        	<div class="large-4 column">
+                <h2>EXPLORE</h2>
+                <img src="img/h1header.svg" alt="header">
+            </div>
+        </div>        
+        <div id="mapcontainer" class="row">         
+            <div class="large-3 column">
+                <figure>
+                	<div id="sanborn"></div>                    
+                </figure>
+            </div>
+            <div class="large-1 column">
+                <table width="100%" border="1" cellpadding="10" >
+                    <tr><th colspan="2">Key</th></tr>
+                    <tr><td bgcolor="#F5BC31"></td><td>Mapped</td></tr>
+                    <tr><td bgcolor="#D8CEC2"></td><td>Unmapped</td></tr>
+                    <tr><td colspan="2">Explore the wold of Sanborn Maps. Just click on a mapped state and enjoy!</td></tr>
+                    <tr><th colspan="2">Reference</th></tr>
+                    <tr><td colspan="2">This will include links to archive etc (alt nav)</td></tr>
+                </table>
+       		</div>
+        </div>
+        <div class="row"> 
+			<div class="large-4 column">
+        		<img src="img/footer.svg" alt="header">
+                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 Rhett A Forbes</small></p>
+        	</div>
+        </div>
+    </section>
+    <script src="js/sanborn.js"></script>
+    </body>
+</html>
