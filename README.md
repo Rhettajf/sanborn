@@ -8,6 +8,7 @@ Sanborn’s maps feature beautiful hand rendered letter forms that will inspire 
 The awesome line work you see in Sanborn maps is difficult to replicate on screen. Imperfections make their maps perfect and in a pixel perfect medium, this is a challenge to achieve. All line work and borders use SVGs to keep things sharp and scalable. Thanks to Raphaël and DrawStates, I was able to write a responsive interactive map and begin to index the maps by state. I expanded upon Drawstates to include active and hover states, tooltips, and link the states to there pages. 
 ## Author
 [Rhett A Forbes](http://rhettforbes.com/)
+
 http://itgm715.rhettforbes.com/projecta/sanborn
 ## Respects
 * [ScreenType](http://screentype.rhettforbes.com/) - v1.2 A screen serif by Rhett Forbes
