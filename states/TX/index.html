@@ -9,37 +9,58 @@
     <link href="../../css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <section>
+    <section class="row">
         <header class="row"> 
             <div class="large-4 column">
-            	<h1><a href="../../index.html" title="Sanborn Map Company">S.M.C</a></h1>     
+            	<img src="../../img/head.svg" alt="header">
+                <h1><a href="../../index.html" title="Sanborn Map Company">SMC</a></h1>
             </div>
         </header>
+           
         <nav class="row">
             <div class="large-1 medium-1 small-4 column"><a href="../../history.html" title="History">History</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="../../legend.html" title="Legend">Legend</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="../../archive.html" title="Archive">Archive</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="../../siteindex.html" title="Index">Index</a></div>
         </nav>
-        <div class="row"><div class="large-4 column"><img src="../../img/headfoot.svg" alt="header"></div></div>
-        <div class="row"> 
+        
+        <div class="row space"><div class="large-4 column"><img src="../../img/headfoot.svg" alt="header"></div></div>
+        <div class="row skip"> 
             <div class="large-1 medium-1 small-1 column">
             	<img src="../img/texas.svg" alt="texas">
+                <p class="text center">Sheet One</p>
             </div>
             <div class="large-2 medium-2 small-2 column">
-            	<h2 id="text">TEXAS</h2>        
+            	     <img src="texastext.svg" alt="header">
+                     <h3 class="text years">1806-1921</h3>
             </div>
             <div class="large-1 medium-1 small-1 column">
-                <img src="../img/usa.svg" alt="back-2-map">       
+                <img src="../img/usa.svg" alt="back-2-map">
+                <p class="text center">Back to map.</p>       
             </div>
         	<div class="large-4 column"><img src="../../img/h1header.svg" alt="header"></div>
         </div>
+        <footer class="row"> 
+			<div class="large-4 column">
+        		<img src="../../img/footer.svg" alt="header">
+                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
+        	</div>
+            
+        </footer>
+        </section>
+        
+        <section class="row">
         <div class="row"> 
            <div class="large-4 column"><div id="gallery"><img src="1.png" alt="header"></div>
         </div>
+        </div>
+        </section>
+        <section class="row">
         <div class="row"> 
            <div class="large-4 column"><div id="gallery"><img src="2.png" alt="header"></div>
         </div>
+        </div>
+        </section>
         <footer class="row"> 
 			<div class="large-4 column">
         		<img src="../../img/footer.svg" alt="header">
@@ -52,7 +73,7 @@
 	<script>
     $(document).ready(function() {
     $('header h1').scalem({
-        ratio: .25,
+        ratio: .22,
 		reference: 'h1'
       });
     $('h2').scalem({
