@@ -13,7 +13,7 @@
         <header class="row"> 
             <div class="large-4 column">
             	<img src="img/head.svg" alt="header">
-                <img src="img/title_off.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title rollover">
+                <img src="img/title_on.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title">
             </div>
         </header>
         <nav class="row">
@@ -58,11 +58,6 @@
 	<script src="js/rwd_text.js"></script>
     <script src="js/sanborn.js"></script>
     <script>    $(document).ready(function() {
-		$("img.rollover").hover( 
-function() { this.src = this.src.replace("_off", "_on"); 
-}, 
-function() { this.src = this.src.replace("_on", "_off"); 
-});
     $('header h1').scalem({
         ratio: .25,
 		reference: 'h1'
