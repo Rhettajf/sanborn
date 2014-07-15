@@ -10,7 +10,7 @@ var SanbornIndex = {
     DC: false,
     DE: false,
     FL: false,
-    GA: false,
+    GA: true,
     HI: false,
     IA: false,
     ID: false,
@@ -59,7 +59,8 @@ $.each(myMap.states, function (name, state) {
     //check if I have the map
 	if (SanbornIndex[name]) {
 		//highlight the states I have maps for
-        state.attr("fill", "#F5BC31");
+        state.attr("fill", "#d3b74c");
+		state.attr("fill-opacity", "1");
 		//set the opacity for hover effect later
         state.attr("opacity", .5);
 		// set cursor

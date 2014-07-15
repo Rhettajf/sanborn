@@ -13,7 +13,7 @@
         <header class="row"> 
             <div class="large-4 column">
             	<img src="../../img/head.svg" alt="header">
-                <h1><a href="../../index.html" title="Sanborn Map Company">SMC</a></h1>
+                <a href="../../index.html" title="Sanborn Map Company"><img src="../../img/title_off.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title rollover"></a>
             </div>
         </header>
            
@@ -23,23 +23,63 @@
             <div class="large-1 medium-1 small-4 column"><a href="../../archive.html" title="Archive">Archive</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="../../siteindex.html" title="Index">Index</a></div>
         </nav>
-        
-        <div class="row space"><div class="large-4 column"><img src="../../img/headfoot.svg" alt="header"></div></div>
-        <div class="row skip"> 
+        <div class="row"> 
             <div class="large-1 medium-1 small-1 column">
             	<img src="../img/texas.svg" alt="texas">
-                <p class="text center">Sheet One</p>
             </div>
             <div class="large-2 medium-2 small-2 column">
             	     <img src="texastext.svg" alt="header">
-                     <h3 class="text years">1806-1921</h3>
             </div>
             <div class="large-1 medium-1 small-1 column">
-                <img src="../img/usa.svg" alt="back-2-map">
-                <p class="text center">Back to map.</p>       
+                <img src="../img/usa.svg" alt="back-2-map">     
             </div>
-        	<div class="large-4 column"><img src="../../img/h1header.svg" alt="header"></div>
         </div>
+        <div class="row">
+        <div class="large-4 column">
+        <table id="myTable" class="tablesorter">
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Pages</th>
+      <th>Year(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#abilene">Abilene</a></td>
+      <td>1</td>
+      <td>1929</td>
+    </tr>
+    <tr>
+      <td>Amarillo</td>
+      <td>1</td>
+      <td>1921</td>
+    </tr>
+    <tr>
+      <td>Austin</td>
+      <td>1</td>
+      <td>1900</td>
+    </tr>
+    <tr>
+      <td>Beaumont</td>
+      <td>2</td>
+      <td>1911-1941</td>
+    </tr>
+    <tr>
+      <td>Dallas</td>
+      <td>8</td>
+      <td>1899-1927</td>
+    </tr>
+    <tr>
+      <td>El Paso</td>
+      <td>2</td>
+      <td>1908-1927</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
         <footer class="row"> 
 			<div class="large-4 column">
         		<img src="../../img/footer.svg" alt="header">
@@ -61,26 +101,15 @@
         </div>
         </div>
         </section>
-        <footer class="row"> 
-			<div class="large-4 column">
-        		<img src="../../img/footer.svg" alt="header">
-                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
-        	</div>
-        </footer>
-    </section>
+
     <script src="../../js/jquery-min.js"></script>
 	<script src="../../js/rwd_text.js"></script>
+    <script src="../../js/jquery.tablesorter.min.js"></script>
+    <script src="../../js/ready.js"></script>
 	<script>
-    $(document).ready(function() {
-    $('header h1').scalem({
-        ratio: .22,
-		reference: 'h1'
-      });
-    $('h2').scalem({
-        ratio: 0.75,
-        reference: 'h2'
-      });
-    });
+	$(function(){
+  $("#myTable").tablesorter();
+});
     </script>    
 </body>
 </html>

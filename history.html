@@ -13,24 +13,18 @@
         <header class="row"> 
             <div class="large-4 column">
             	<img src="img/head.svg" alt="header">
-                <h1><a href="index.html" title="Sanborn Map Company">SMC</a></h1>
+                <a href="index.html" title="Sanborn Map Company"><img src="img/title_off.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title rollover"></a>
             </div>
         </header>
         <nav class="row">
-            <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History">History</a></div>
+            <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History" class="active">History</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="legend.html" title="Legend">Legend</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="archive.html" title="Archive">Archive</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="siteindex.html" title="Index">Index</a></div>
         </nav>
-        <div class="row space"><div class="large-4 column"><img src="img/headfoot.svg" alt="header"></div></div>
-        <div class="row skip"> 
-        	<div class="large-4 column">
-                <h2>HISTORY</h2>
-                <img src="img/h1header.svg" alt="header">
-            </div>
-        </div>
         <div class="row"> 
            <div class="large-4 column">
+            <h2>HISTORY</h2>
            <article>
            <h3>Sanborn Map Company</h3>
            <p>The Sanborn Map Company is an American publisher of historical and current maps of US cities and towns.</p> 
@@ -45,24 +39,13 @@
         </div>
         <footer class="row"> 
 			<div class="large-4 column">
-        		<img src="img/footer.svg" alt="header">
-                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
+            <img src="img/headfoot.svg" alt="header">
+                <p><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
         	</div>
         </footer>
     </section>
     <script src="js/jquery-min.js"></script>
 	<script src="js/rwd_text.js"></script>
-    <script>
-    $(document).ready(function() {
-    $('header h1').scalem({
-        ratio: .25,
-		reference: 'h1'
-      });
-    $('h2').scalem({
-        ratio: 0.25,
-        reference: 'h2'
-      });
-    });
-    </script> 
+	<script src="js/ready.js"></script>
 </body>
 </html>

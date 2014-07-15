@@ -13,24 +13,18 @@
         <header class="row"> 
             <div class="large-4 column">
             	<img src="img/head.svg" alt="header">
-                <h1><a href="#" title="Sanborn Map Company">SMC</a></h1>
+                <img src="img/title_off.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title rollover">
             </div>
         </header>
         <nav class="row">
-            <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History">History</a></div>
+            <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History" class="nl">History</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="legend.html" title="Legend">Legend</a></div>
             <div class="large-1 medium-1 small-4 column"><a href="archive.html" title="Archive">Archive</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="siteindex.html" title="Index">Index</a></div>
+            <div class="large-1 medium-1 small-4 column"><a href="siteindex.html" title="Index" class="nr">Index</a></div>
         </nav>
-        <div class="row soace"><div class="large-4 column"><img src="img/headfoot.svg" alt="header"></div></div>
-        <div class="row skip"> 
-        	<div class="large-4 column">
-                <h2>EXPLORE</h2>
-                <img src="img/h1header.svg" alt="header">
-            </div>
-        </div>        
         <div id="mapcontainer" class="row">         
             <div class="large-3 column">
+            <h2>EXPLORE SANBORN MAPS</h2>
                 <figure>
                 	<div id="sanborn"></div>                    
                 </figure>
@@ -38,18 +32,23 @@
             <div class="large-1 column">
                 <table width="100%" border="1" cellpadding="10" >
                     <tr><th colspan="2">Key</th></tr>
-                    <tr><td bgcolor="#FADD98"></td><td>Mapped</td></tr>
-                    <tr><td bgcolor="#D8CEC2"></td><td>Unmapped</td></tr>
-                    <tr><td colspan="2">Explore the wold of Sanborn Maps. Just click on a mapped state and enjoy!</td></tr>
+                    <tr><td bgcolor="#d3b74c"></td><td>Mapped</td></tr>
+                    <tr><td></td><td>Unmapped</td></tr>
+                    <tr><td colspan="2"><p>Explore the wold of Sanborn Maps. Just click on a mapped state and enjoy!</p></td></tr>
                     <tr><th colspan="2">Reference</th></tr>
-                    <tr><td colspan="2">This will include links to archive etc (alt nav)</td></tr>
+                    <tr><td colspan="2">
+                    	<p><a href="archive.html" title="Archive">State Archive</a><br>
+                        <a href="history.html" title="History">Sanborn History</a><br>
+                        <a href="legend.html" title="Legend">Typographic Legend</a><br>
+                		<a href="siteindex.html" title="Index">Resource Index</a></p>
+                    </td></tr>
                 </table>
        		</div>
         </div>
         <footer class="row"> 
 			<div class="large-4 column">
-        		<img src="img/footer.svg" alt="header">
-                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
+            <img src="img/headfoot.svg" alt="header">
+                <p><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
         	</div>
         </footer>
     </section>
@@ -58,17 +57,19 @@
     <script src="js/drawStates.js"></script>
 	<script src="js/rwd_text.js"></script>
     <script src="js/sanborn.js"></script>
-	<script>
-    $(document).ready(function() {
+    <script>    $(document).ready(function() {
+		$("img.rollover").hover( 
+function() { this.src = this.src.replace("_off", "_on"); 
+}, 
+function() { this.src = this.src.replace("_on", "_off"); 
+});
     $('header h1').scalem({
         ratio: .25,
 		reference: 'h1'
       });
     $('h2').scalem({
-        ratio: 0.25,
-        reference: 'h2'
+        ratio: .5
       });
-    });
-    </script> 
+    });	</script>
     </body>
 </html>

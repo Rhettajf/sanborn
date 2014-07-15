@@ -64,7 +64,7 @@ function drawStates(where){
 	});
 	map.setSize($node.width(), $node.width()/495 * 330);
 	jQuery.each(states, function(){
-		this.attr("fill", "#D8CEC2");
+		this.attr("fill-opacity", "0");
 		this.attr("stroke", "#000");
 	});
 	return {"map":map, "states":states};
