@@ -9,62 +9,69 @@
     <link href="css/layout.css" rel="stylesheet" type="text/css">  
 </head>
 <body>
-<section class="row">
-        <header class="row"> 
-            <div class="large-4 column">
-            	<img src="img/head.svg" alt="header">
-                <img src="img/title_on.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title">
-            </div>
-        </header>
-        <nav class="row">
-            <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History" class="nl">History</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="legend.html" title="Legend">Legend</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="archive.html" title="Archive">Archive</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="siteindex.html" title="Index" class="nr">Index</a></div>
-        </nav>
-        <div id="mapcontainer" class="row brapper">         
+<section id="home" class="row">
+    <header class="row"> 
+        <div class="large-4 column">
+            <img src="img/head.svg" alt="header">
+            <img src="img/title_on.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title">
+            <div class="tag">Sheet 1</div>
+        </div>
+    </header>
+    <nav class="row">
+        <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History">History</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="legends.html" title="Legends">Legends</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="archive.html" title="Archive">Archives</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="resources.html" title="Resources">Resources</a></div>
+    </nav>
+    <div class="row">
+
+<div class="large-4 column">
+<p class="drop">The Sanborn Map Company has been mapping and drawing from American history for over 140 years. Their maps showcase legendary hand-drawn typography, elegant line work, &amp; the American aesthetic. Our archives contain the history and typographic inspiration of 100's of American cities and towns. We also put together a list of resources and free Sanborn inspired fonts for your next design.</p>
+</div>
+    </div>
+    <div id="mapcontainer" class="row">
+        <div class="brapper">         
             <div class="large-3 column">
             <h2>EXPLORE SANBORN MAPS</h2>
-                <figure>
-                	<div id="sanborn"></div>                    
-                </figure>
+
+                    <div id="sanborn"><div id="output">USA</div></div>                    
+                    
+
             </div>
             <div class="large-1 column">
+            <div class="row">
+            	<div class="large-4 medium-3 small-2 column">
                 <table width="100%" border="1" cellpadding="10" >
                     <tr><th colspan="2">Key</th></tr>
+                    <tr><td colspan="2"><p><small>Click on a mapped state &amp; explore the wold of Sanborn Maps.</small></p></td></tr>
                     <tr><td bgcolor="#d3b74c"></td><td>Mapped</td></tr>
                     <tr><td></td><td>Unmapped</td></tr>
-                    <tr><td colspan="2"><p>Explore the wold of Sanborn Maps. Just click on a mapped state and enjoy!</p></td></tr>
-                    <tr><th colspan="2">Reference</th></tr>
-                    <tr><td colspan="2">
-                    	<p><a href="archive.html" title="Archive">State Archive</a><br>
-                        <a href="history.html" title="History">Sanborn History</a><br>
-                        <a href="legend.html" title="Legend">Typographic Legend</a><br>
-                		<a href="siteindex.html" title="Index">Resource Index</a></p>
-                    </td></tr>
                 </table>
-       		</div>
+                </div>
+                <div class="large-4 medium-1 small-2 column">
+                <img src="img/compass.svg" alt="compass">
+                </div>
+                </div>
+            </div>
         </div>
-        <footer class="row"> 
-			<div class="large-4 column">
-            <img src="img/headfoot.svg" alt="header">
-                <p><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
-        	</div>
-        </footer>
+    </div>
+    <footer class="row"> 
+        <div class="large-4 column">
+        <img src="img/headfoot.svg" alt="header">
+        </div>
+    </footer>
     </section>
     <script src="js/jquery-min.js"></script>
     <script src="js/raphael-min.js"></script>
     <script src="js/drawStates.js"></script>
 	<script src="js/rwd_text.js"></script>
     <script src="js/sanborn.js"></script>
-    <script>    $(document).ready(function() {
-    $('header h1').scalem({
-        ratio: .25,
-		reference: 'h1'
-      });
-    $('h2').scalem({
-        ratio: .5
-      });
-    });	</script>
-    </body>
+    <script>    
+		$(document).ready(function() {
+		$('h2').scalem({
+			ratio: .5
+		  });
+		});	
+    </script>
+</body>
 </html>

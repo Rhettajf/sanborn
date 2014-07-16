@@ -10,7 +10,7 @@ var SanbornIndex = {
     DC: false,
     DE: false,
     FL: false,
-    GA: true,
+    GEORGIA: false,
     HI: false,
     IA: false,
     ID: false,
@@ -43,7 +43,7 @@ var SanbornIndex = {
     SC: false,
     SD: false,
     TN: false,
-    TX: true,
+    TEXAS: true,
     UT: false,
     VA: false,
     VT: false,
@@ -60,9 +60,8 @@ $.each(myMap.states, function (name, state) {
 	if (SanbornIndex[name]) {
 		//highlight the states I have maps for
         state.attr("fill", "#d3b74c");
-		state.attr("fill-opacity", "1");
+		state.attr("fill-opacity", "0.5");
 		//set the opacity for hover effect later
-        state.attr("opacity", .5);
 		// set cursor
 		state.attr("cursor","pointer");
 		//set click event to direct to url, use state abbrs
@@ -73,24 +72,14 @@ $.each(myMap.states, function (name, state) {
 		//hover event
         this.hover(function (event) {
             // set focus
-			state.attr("opacity", 1);
+			state.attr("fill-opacity", "1");
 			// generate a tooltip to show state name
-            $('<div id="output"></div>').text(name)
-                .appendTo('body')
-                .css('top', (event.pageY - 10) + 'px')
-                .css('left', (event.pageX + 20) + 'px')
-                .fadeIn('slow');
+            $('#output').text(name)
         }, function () {
 			//on mouse out reset opacity and remove tooltip
-            state.attr("opacity", .5);
-            $('#output').remove();
+            state.attr("fill-opacity", "0.5");
+			$('#output').text("USA")
         }) 
-			//make the tool tip follow the mouse 
-		  .mousemove(function (event) {
-            $('#output')
-                .css('top', (event.pageY - 10) + 'px')
-                .css('left', (event.pageX + 20) + 'px');
-        });
     } else {
         //set opacity for inactive states
 		state.attr("opacity", .5);
