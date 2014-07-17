@@ -5,6 +5,7 @@
     <title>Sanborn Map Company</title>
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
+    <meta name="viewport" content="width=device-width" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/layout.css" rel="stylesheet" type="text/css">  
 </head>
@@ -15,7 +16,7 @@
             <img src="img/head.svg" alt="header">
             <img src="img/title_on.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title">
             <div class="tag">Sheet 1</div>
-        </div>
+        </div><!-- /column -->
     </header>
     <nav class="row">
         <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History">History</a></div>
@@ -24,54 +25,43 @@
         <div class="large-1 medium-1 small-4 column"><a href="resources.html" title="Resources">Resources</a></div>
     </nav>
     <div class="row">
-
-<div class="large-4 column">
-<p class="drop">The Sanborn Map Company has been mapping and drawing from American history for over 140 years. Their maps showcase legendary hand-drawn typography, elegant line work, &amp; the American aesthetic. Our archives contain the history and typographic inspiration of 100's of American cities and towns. We also put together a list of resources and free Sanborn inspired fonts for your next design.</p>
-</div>
-    </div>
+        <div class="large-4 column">
+        	<p>The Sanborn Map Company has been mapping and drawing from American history for over 140 years. Their maps showcase legendary hand-drawn typography, elegant line work, &amp; the American aesthetic. Our archives contain the history and typographic inspiration of 100's of American cities and towns. We also put together a list of resources and free Sanborn inspired fonts for your next design.</p>
+        </div><!-- /column -->
+    </div><!-- /row -->
     <div id="mapcontainer" class="row">
-        <div class="brapper">         
-            <div class="large-3 column">
-            <h2>EXPLORE SANBORN MAPS</h2>
+        <div class="brapper"> 
+        	<div class="large-4 column">
+				<h2>EXPLORE SANBORN MAPS</h2>
+				<img src="img/hr2.svg" alt="header" class="hr">
+			</div><!-- /column -->
+            <div class="large-3 medium-3 small-4 column">
+                    <div id="sanborn"><div id="output">USA</div></div><!-- /sanborn map -->
+            </div><!-- /column -->
+            <div class="large-1 medium-1 small-4 column">         
+			  <div class="key">
+                    <h5>Key</h5>
+                    <ul class="no-bullet">
+                    <li style="background-color:#d3b74c;">Mapped</li>
+                    <li style="background-color:#C4C4C4;">Unmapped</li>
+                    </ul>
+                    <h6><a href="archive.html">View Archive</a></h6>
+              </div>
 
-                    <div id="sanborn"><div id="output">USA</div></div>                    
-                    
+            <img src="img/compass.svg" class="compass tiny" alt="header">
 
-            </div>
-            <div class="large-1 column">
-            <div class="row">
-            	<div class="large-4 medium-3 small-2 column">
-                <table width="100%" border="1" cellpadding="10" >
-                    <tr><th colspan="2">Key</th></tr>
-                    <tr><td colspan="2"><p><small>Click on a mapped state &amp; explore the wold of Sanborn Maps.</small></p></td></tr>
-                    <tr><td bgcolor="#d3b74c"></td><td>Mapped</td></tr>
-                    <tr><td></td><td>Unmapped</td></tr>
-                </table>
-                </div>
-                <div class="large-4 medium-1 small-2 column">
-                <img src="img/compass.svg" alt="compass">
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </div> <!-- /large-1 column -->
+        </div><!-- /brapper -->
+    </div><!-- /row -->
     <footer class="row"> 
         <div class="large-4 column">
         <img src="img/headfoot.svg" alt="header">
-        </div>
+        </div><!-- /column -->
     </footer>
-    </section>
-    <script src="js/jquery-min.js"></script>
-    <script src="js/raphael-min.js"></script>
-    <script src="js/drawStates.js"></script>
-	<script src="js/rwd_text.js"></script>
-    <script src="js/sanborn.js"></script>
-    <script>    
-		$(document).ready(function() {
-		$('h2').scalem({
-			ratio: .5
-		  });
-		});	
-    </script>
+</section>
+<script src="js/jquery-min.js"></script>
+<script src="js/raphael-min.js"></script>
+<script src="js/drawStates.js"></script>
+<script src="js/sanborn.js"></script>
 </body>
 </html>

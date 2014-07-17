@@ -5,147 +5,136 @@
     <title>Sanborn Map Company</title>
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
+    <meta name="viewport" content="width=device-width" />
     <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../../css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body id="state">
-    <section class="row">
-        <header class="row"> 
-            <div class="large-4 column">
-            	<img src="../../img/head.svg" alt="header">
-                <a href="../../index.html" title="Sanborn Map Company"><img src="../../img/title_off.svg" alt="header" title="Sanborn Map Company" alt="SMC" class="title rollover"></a>
-            </div>
-        </header>
-           
-        <nav class="row">
-            <div class="large-1 medium-1 small-4 column"><a href="../../history.html" title="History">History</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="../../legends.html" title="Legends">Legends</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="../../archive.html" title="Archive">Archive</a></div>
-            <div class="large-1 medium-1 small-4 column"><a href="../../resources.html" title="Resources">Resources</a></div>
-        </nav>
-        <div class="row"> 
-            <div class="large-1 medium-1 small-1 column">
-            	<img src="../img/texas.svg" alt="texas">
-            </div>
-            <div class="large-2 medium-2 small-2 column">
-            	     <img src="texastext.svg" alt="header">
-            </div>
-            <div class="large-1 medium-1 small-1 column">
-                <img src="../img/usa.svg" alt="back-2-map">     
-            </div>
-        </div>
-        <div class="row">
-        <div class="brapper">
+<section class="row">
+    <header class="row"> 
         <div class="large-4 column">
-        <table id="myTable" class="tablesorter">
-  <thead>
-    <tr>
-      <th>City</th>
-      <th>Pages</th>
-      <th>Year(s)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="#abilene">Abilene</a></td>
-      <td>1</td>
-      <td>1929</td>
-    </tr>
-    <tr>
-      <td><a href="#amarillo">Amarillo</a></td>
-      <td>1</td>
-      <td>1921</td>
-    </tr>
-    <tr>
-      <td><a href="#austin">Austin</a></td>
-      <td>1</td>
-      <td>1900</td>
-    </tr>
-    <tr>
-      <td><a href="#beaumont">Beaumont</a></td>
-      <td>2</td>
-      <td>1911-1941</td>
-    </tr>
-    <tr>
-      <td><a href="#dallas">Dallas</a></td>
-      <td>8</td>
-      <td>1899-1927</td>
-    </tr>
-    <tr>
-      <td><a href="#el_paso">El Paso</a></td>
-      <td>2</td>
-      <td>1908-1927</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-</div>
-</div>
-
-        <footer class="row"> 
-			<div class="large-4 column">
-        		<img src="../../img/footer.svg" alt="header">
-                <p style="text-align:center; margin-top:0;"><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
-        	</div>
-            
-        </footer>
-        </section>
-        
-        <section class="row collapse" id="abilene">
-           <div class="large-4 column">
-           <h2>abilene</h2>
-           <img src="txu-sanborn-abilene-1929-1200.jpg" alt="abilene-1929"></div>
+            <img src="../../img/head.svg" alt="header">
+            <a href="../../index.html" title="Sanborn Map Company"><img src="../../img/title_off.svg" title="Sanborn Map Company" alt="SMC" class="title rollover"></a>
+            <div class="tag">Sheet TX1</div>
+        </div><!-- /column -->
+    </header>           
+    <nav class="row">
+        <div class="large-1 medium-1 small-4 column"><a href="../../history.html" title="History">History</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="../../legends.html" title="Legends">Legends</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="../../archive.html" title="Archive">Archive</a></div>
+        <div class="large-1 medium-1 small-4 column"><a href="../../resources.html" title="Resources">Resources</a></div>
+    </nav>
+    <div class="row"> 
+        <div class="large-1 medium-1 small-1 column">
+            <img src="../img/texas.svg" alt="texas">
+        </div><!-- /column -->
+        <div class="large-2 medium-2 small-2 column">
+                 <img src="texastext.svg" alt="header">
+        </div><!-- /column -->
+        <div class="large-1 medium-1 small-1 column">
+            <img src="../img/usa.svg" alt="back-2-map">     
+        </div><!-- /column -->
+    </div><!-- /row -->
+    <div class="row">
+        <div class="large-4 column">
+        <img src="../../img/hr2.svg" alt="header" class="hr">
+            <table id="cityTable" class="tablesorter">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Pages</th>
+                        <th>Year(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#abilene">Abilene</a></td>
+                        <td>1</td>
+                        <td>1929</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#amarillo">Amarillo</a></td>
+                        <td>1</td>
+                        <td>1921</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#austin">Austin</a></td>
+                        <td>1</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#beaumont">Beaumont</a></td>
+                        <td>2</td>
+                        <td>1911-1941</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#dallas">Dallas</a></td>
+                        <td>8</td>
+                        <td>1899-1927</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#el_paso">El Paso</a></td>
+                        <td>2</td>
+                        <td>1908-1927</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- /column -->
+    </div><!-- /row -->
+    <footer class="row"> 
+        <div class="large-4 column">
+        <img src="../../img/footer.svg" alt="header">
         </div>
-        </section>
-        
-        <section class="row collapse" id="amarillo">
-           <div class="large-4 column">
-           <h2>amarillo</h2>
-           <img src="amarillo_1921_1200.jpg" alt="amarillo_1921"></div>
-        </div>
-        </section>
-
-        <section class="row collapse" id="austin">
-           <div class="large-4 column">
-           <h2>austin</h2>
-           <img src="austin_1900_1200.jpg" alt="austino_1900"></div>
-        </div>
-        </section>
-
-        <section class="row collapse" id="beaumont">
-           <div class="large-4 column">
-           <h2>beaumont</h2>
-           <img src="beaumont_1911_1200.jpg" alt="beaumont_1911">
-           <img src="txu-sanborn-beaumont-1941-1200.jpg" alt="beaumont_1941">
-           </div>
-        </section>
-
-        <section class="row collapse" id="dallas">
-           <div class="large-4 column">
-           <h2>dallas</h2>
-           <img src="txu-sanborn-dallas-1899-1200.jpg" alt="dallas_1889">
-           <img src="txu-sanborn-dallas-1905-1200.jpg" alt="dallas_1905">
-           <img src="txu-sanborn-dallas-1921-1200.jpg" alt="dallas_1921">
-           <img src="txu-sanborn-dallas-1927-1200.jpg" alt="dallas_1927">
-           </div>
-        </section>
-                          
-        <section class="row collapse" id="el_paso">
-           <div class="large-4 column">
-           <h2>el paso</h2>
-           <img src="txu-sanborn-el_paso-1908-1200.jpg" alt="el_paso_1908">
-           <img src="txu-sanborn-el_paso-1927-1200.jpg" alt="beaumont_1927">
-           </div>
-        </section>
-
-    <script src="../../js/jquery-min.js"></script>
-	<script src="../../js/rwd_text.js"></script>
-    <script src="../../js/jquery.tablesorter.min.js"></script>
-    <script src="../../js/ready.js"></script>
-	<script>
+    </footer>
+</section>
+<section class="row collapse" id="abilene">
+    <div class="large-4 column">
+        <h2>abilene</h2>
+        <img src="txu-sanborn-abilene-1929-1200.jpg" alt="abilene-1929"></div>
+    </div><!-- /column -->
+</section>
+<section class="row collapse" id="amarillo">
+    <div class="large-4 column">
+        <h2>amarillo</h2>
+        <img src="amarillo_1921_1200.jpg" alt="amarillo_1921"></div>
+    </div><!-- /column -->
+</section>
+<section class="row collapse" id="austin">
+    <div class="large-4 column">
+        <h2>austin</h2>
+        <img src="austin_1900_1200.jpg" alt="austino_1900"></div>
+    </div><!-- /column -->
+</section>
+<section class="row collapse" id="beaumont">
+    <div class="large-4 column">
+        <h2>beaumont</h2>
+        <img src="beaumont_1911_1200.jpg" alt="beaumont_1911">
+        <img src="txu-sanborn-beaumont-1941-1200.jpg" alt="beaumont_1941">
+    </div><!-- /column -->
+</section>
+<section class="row collapse" id="dallas">
+    <div class="large-4 column">
+        <h2>dallas</h2>
+        <img src="txu-sanborn-dallas-1899-1200.jpg" alt="dallas_1889">
+        <img src="txu-sanborn-dallas-1905-1200.jpg" alt="dallas_1905">
+        <img src="txu-sanborn-dallas-1921-1200.jpg" alt="dallas_1921">
+        <img src="txu-sanborn-dallas-1927-1200.jpg" alt="dallas_1927">
+    </div><!-- /column -->
+</section>              
+<section class="row collapse" id="el_paso">
+    <div class="large-4 column">
+        <h2>el paso</h2>
+        <img src="txu-sanborn-el_paso-1908-1200.jpg" alt="el_paso_1908">
+        <img src="txu-sanborn-el_paso-1927-1200.jpg" alt="beaumont_1927">
+    </div><!-- /column -->
+</section>
+<script src="../../js/jquery-min.js"></script>
+<script src="../../js/jquery.tablesorter.min.js"></script>
+<script src="../../js/ready.js"></script>
+<script>
 	$(function(){
-  $("#myTable").tablesorter();
-});
-    </script>    
+		$("#cityTable").tablesorter();
+	});
+</script>    
 </body>
 </html>
