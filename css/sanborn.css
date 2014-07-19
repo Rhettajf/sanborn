@@ -576,11 +576,11 @@ footer { margin-top:1em !important; }
 	#resources nav a:hover:not(.active) {color:#ffd18c;}
 
 /*  STATE PAGES */
-#state {}
-	#state section.row.city {
+#cityindex{margin-bottom:1em;}
+	#state .city {
 		padding:1em 0 0 0;
 		position:relative;}
-		#state section.city img {
+		#state .city img {
 			margin-top:0;
 			margin-bottom:0;
 			filter: grayscale(100%);
@@ -592,29 +592,29 @@ footer { margin-top:1em !important; }
 			-o-transition: all 1s ease-in-out;
 			-ms-transition: all 1s ease-in-out;
 			-webkit-filter: grayscale(100%);}
-			#state section.city h2 { margin-top:0.25em;}
-			#state section.city img + img {
+			#state .city img:hover {
+				-webkit-filter: grayscale(0);
+				filter: grayscale(0);
+				filter: none;}
+			#state .city h2 { margin-top:0.25em;}
+			img.bttrlazyloading {
 				border-style: solid;
 				border-width:3px 0 0 0;
 				-webkit-border-image:url(../img/hr3.svg) 3 stretch;
 				-moz-border-image:url(../img/hr3.svg) 3 stretch;
 				border-image:url(../img/hr3.svg) 3 stretch;}
-			#state section.city img:hover {
-				-webkit-filter: grayscale(0);
-				filter: grayscale(0);
-				filter: none;}
-#state section.city footer {
+#state .city footer {
 	position:absolute; 
 	bottom:0; 
 	left:0; 
 	width:100%; 
 	display:table;}
-	#state section.city footer .inline-list {
-		margin: 0 auto 1em auto;}  	
-		#state section.city footer .inline-list > li {
+	#state .city footer ul {
+		margin: 0 auto 0.5em auto;}  	
+		#state .city footer ul > li {
 			float: right;
 			margin:0;
-			margin-right: 1.375rem;
+			margin-right:0;
 			max-width:100px;}
 	
 /* ======================== NAVIGATION ======================== */
@@ -657,9 +657,6 @@ nav.row {margin-bottom:2em !important;}
 			background-image: none;
 			background-color: transparent; }
 
-/* HOVER EFFECT HELPER FOR SVG LINKS */	
-.ohover {opacity:0.75;}
-.ohover:hover {opacity:1;}
 	
 /* ======================== FLOATS ======================== */
 
@@ -892,10 +889,8 @@ nav.row { margin-top:1em;}
 		border-style: solid;
 		border-width:1px;}
 		nav a, nav a.active:hover {font-size:1.5em;}
-#state section.city footer .inline-list > li {
-		margin-right: 1em;
-		width:75px;
-		max-width:75px;}		
+#state footer ul > li {
+		width:75px;}		
 .key, .compass.tiny { margin-top: 1em;}		
 }
 /* ========================================== RWD Medium and UP ==========================================================
@@ -925,6 +920,9 @@ h6 {font-size: 1.125em;}
 /* RWD HELPERS */	
 .mobile-only { display:none;}
 .mobile-hide { display:block;}
+/* HOVER EFFECT HELPER FOR SVG LINKS */	
+.ohover {opacity:0.75;}
+.ohover:hover {opacity:1;}
 /* PAGE */
 header img {margin-bottom:0;}
 
@@ -970,9 +968,7 @@ nav a, nav a.active:hover {
 			-webkit-box-shadow: inset 5px -5px 2px rgba(0, 0, 0, 0.5);
 			box-shadow:         inset 5px -5px 2px rgba(0, 0, 0, 0.5); }
 #state section.city footer .inline-list > li {
-		margin-right: 1.375rem;
-		width:100px;
-		max-width:100px;}
+		width:100px;}
 article { 
 	-webkit-column-count: 2; 
 	-webkit-column-rule: 1px solid #000; 
