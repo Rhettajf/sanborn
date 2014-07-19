@@ -6,14 +6,14 @@
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
     <meta name="viewport" content="width=device-width" />
-    <link href="../../css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../../css/sanborn-min.css" rel="stylesheet" type="text/css">
 </head>
 <body id="state">
-<section class="row">
+<section id="cityindex" class="row">
     <header class="row"> 
         <div class="large-4 column">
             <img src="../../img/head.svg" alt="header">
+            <h1><a href="../../index.html" title="Sanborn Map Company">SMC</a></h1>
             <a href="../../index.html" title="Sanborn Map Company"><img src="../../img/title_off.svg" title="Sanborn Map Company" alt="SMC" class="title rollover"></a>
             <div class="tag">Sheet TX1</div>
         </div><!-- /column -->
@@ -26,13 +26,12 @@
     </nav>
     <div class="row"> 
         <div class="large-1 medium-1 small-1 column">
-            <img src="../img/texas.svg" alt="texas">
+            <img src="stateicon.svg" alt="TEXAS">
         </div><!-- /column -->
         <div class="large-2 medium-2 small-2 column">
-                 <img src="texastext.svg" alt="header">
+                 <img src="name.svg" alt="TEXAS">
         </div><!-- /column -->
-        <div class="large-1 medium-1 small-1 column">
-            <img src="../img/usa.svg" alt="back-2-map">     
+        <div class="large-1 medium-1 small-1 column"> <a href="../../index.html#mapcontainer" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a>     
         </div><!-- /column -->
     </div><!-- /row -->
     <div class="row">
@@ -83,58 +82,231 @@
     </div><!-- /row -->
     <footer class="row"> 
         <div class="large-4 column">
-        <img src="../../img/footer.svg" alt="header">
+        <select name="pickstate" id="pickstate">
+            <option value="" disabled selected>Explore Another State</option>            
+            <option value="Alabama" disabled>Alabama</option>
+            <option value="Alaska" disabled>Alaska</option>
+            <option value="Arizona" disabled>Arizona</option>
+            <option value="Arkansas" disabled>Arkansas</option>
+            <option value="California" disabled>California</option>
+            <option value="Colorado" disabled>Colorado</option>
+            <option value="Connecticut" disabled>Connecticut</option>
+            <option value="Delaware" disabled>Delaware</option>
+            <option value="District of Columbia" disabled>District of Columbia</option>
+            <option value="Florida" disabled>Florida</option>
+            <option value="Georgia" disabled>Georgia</option>
+            <option value="Hawaii" disabled>Hawaii</option>
+            <option value="Idaho" disabled>Idaho</option>
+            <option value="Illinois" disabled>Illinois</option>
+            <option value="Indiana" disabled>Indiana</option>
+            <option value="Iowa" disabled>Iowa</option>
+            <option value="Kansas" disabled>Kansas</option>
+            <option value="Kentucky" disabled>Kentucky</option>
+            <option value="Louisiana" disabled>Louisiana</option>
+            <option value="Maine" disabled>Maine</option>
+            <option value="Maryland" disabled>Maryland</option>
+            <option value="Massachusetts" disabled>Massachusetts</option>
+            <option value="Michigan" disabled>Michigan</option>
+            <option value="Minnesota" disabled>Minnesota</option>
+            <option value="Mississippi" disabled>Mississippi</option>
+            <option value="Missouri" disabled>Missouri</option>
+            <option value="Montana" disabled>Montana</option>
+            <option value="Nebraska" disabled>Nebraska</option>
+            <option value="Nevada" disabled>Nevada</option>
+            <option value="New Hampshire" disabled>New Hampshire</option>
+            <option value="New Jersey" disabled>New Jersey</option>
+            <option value="New Mexico" disabled>New Mexico</option>
+            <option value="New York" disabled>New York</option>
+            <option value="North Carolina" disabled>North Carolina</option>
+            <option value="North Dakota" disabled>North Dakota</option>
+            <option value="Ohio" disabled>Ohio</option>
+            <option value="Oklahoma" disabled>Oklahoma</option>
+            <option value="Oregon" disabled>Oregon</option>
+            <option value="Pennsylvania" disabled>Pennsylvania</option>
+            <option value="Rhode Island" disabled>Rhode Island</option>
+            <option value="South Carolina" disabled>South Carolina</option>
+            <option value="South Dakota" disabled>South Dakota</option>
+            <option value="Tennessee" disabled>Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah" disabled>Utah</option>
+            <option value="Vermont" disabled>Vermont</option>
+            <option value="Virginia" disabled>Virginia</option>
+            <option value="Washington" disabled>Washington</option>
+            <option value="West Virginia" disabled>West Virginia</option>
+            <option value="Wisconsin" disabled>Wisconsin</option>
+            <option value="Wyoming" disabled>Wyoming</option>
+        </select>
+        <img src="../../img/headfoot.svg" alt="header">
         </div>
     </footer>
 </section>
-<section class="row collapse" id="abilene">
+<section class="row collapse city" id="abilene">
     <div class="large-4 column">
         <h2>abilene</h2>
-        <img src="txu-sanborn-abilene-1929-1200.jpg" alt="abilene-1929"></div>
+        
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="abilene" 
+            data-bttrlazyloading-xs-src="txu-sanborn-abilene-1929-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-abilene-1929-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-abilene-1929-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-abilene-1929-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-abilene-1929-1200.jpg" alt="abilene" /></noscript>
     </div><!-- /column -->
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
 </section>
-<section class="row collapse" id="amarillo">
+
+<section class="row collapse city" id="amarillo">
     <div class="large-4 column">
         <h2>amarillo</h2>
-        <img src="amarillo_1921_1200.jpg" alt="amarillo_1921"></div>
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="amarillo" 
+            data-bttrlazyloading-xs-src="txu-sanborn-amarillo-1921-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-amarillo-1921-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-amarillo-1921-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-amarillo-1921-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-amarillo_1921-lg.jpg" alt="amarillo" /></noscript>
     </div><!-- /column -->
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
 </section>
-<section class="row collapse" id="austin">
+
+<section class="row collapse city" id="austin">
     <div class="large-4 column">
         <h2>austin</h2>
-        <img src="austin_1900_1200.jpg" alt="austino_1900"></div>
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="austin" 
+            data-bttrlazyloading-xs-src="txu-sanborn-austin-1900-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-austin-1900-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-austin-1900-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-austin-1900-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-austin-1900-lg.jpg" alt="austin" /></noscript>
     </div><!-- /column -->
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
 </section>
-<section class="row collapse" id="beaumont">
+
+<section class="row collapse city" id="beaumont">
     <div class="large-4 column">
         <h2>beaumont</h2>
-        <img src="beaumont_1911_1200.jpg" alt="beaumont_1911">
-        <img src="txu-sanborn-beaumont-1941-1200.jpg" alt="beaumont_1941">
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="beaumont" 
+            data-bttrlazyloading-xs-src="txu-sanborn-beaumont-1911-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-beaumont-1911-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-beaumont-1911-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-beaumont-1911-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-beaumont-1911-lg.jpg" alt="beaumont" /></noscript>
+        
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="beaumont" 
+            data-bttrlazyloading-xs-src="txu-sanborn-beaumont-1941-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-beaumont-1941-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-beaumont-1941-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-beaumont-1941-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-beaumont-1941-lg.jpg" alt="beaumont" /></noscript>
+        
     </div><!-- /column -->
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
 </section>
-<section class="row collapse" id="dallas">
+
+<section class="row collapse city" id="dallas">
     <div class="large-4 column">
         <h2>dallas</h2>
-        <img src="txu-sanborn-dallas-1899-1200.jpg" alt="dallas_1889">
-        <img src="txu-sanborn-dallas-1905-1200.jpg" alt="dallas_1905">
-        <img src="txu-sanborn-dallas-1921-1200.jpg" alt="dallas_1921">
-        <img src="txu-sanborn-dallas-1927-1200.jpg" alt="dallas_1927">
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="dallas" 
+            data-bttrlazyloading-xs-src="txu-sanborn-dallas-1899-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-dallas-1899-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-dallas-1899-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-dallas-1899-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-dallas-1899-lg.jpg" alt="dallas" /></noscript>
+        
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="dallas" 
+            data-bttrlazyloading-xs-src="txu-sanborn-dallas-1905-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-dallas-1905-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-dallas-1905-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-dallas-1905-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-dallas-1905-lg.jpg" alt="dallas" /></noscript>
+
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="dallas" 
+            data-bttrlazyloading-xs-src="txu-sanborn-dallas-1921-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-dallas-1921-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-dallas-1921-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-dallas-1921-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-dallas-1921-lg.jpg" alt="dallas" /></noscript>
+        
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="dallas" 
+            data-bttrlazyloading-xs-src="txu-sanborn-dallas-1927-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-dallas-1927-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-dallas-1927-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-dallas-1927-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-dallas-1927-lg.jpg" alt="dallas" /></noscript>
+
     </div><!-- /column -->
-</section>              
-<section class="row collapse" id="el_paso">
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
+</section>       
+       
+<section class="row collapse city" id="el_paso">
     <div class="large-4 column">
         <h2>el paso</h2>
-        <img src="txu-sanborn-el_paso-1908-1200.jpg" alt="el_paso_1908">
-        <img src="txu-sanborn-el_paso-1927-1200.jpg" alt="beaumont_1927">
+        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="el_paso" 
+            data-bttrlazyloading-xs-src="txu-sanborn-el_paso-1908-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-el_paso-1908-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-el_paso-1908-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-el_paso-1908-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-el_paso-1908-lg.jpg" alt="el_paso" /></noscript>
+        
+		<img src="../img/placeholder.gif" class="bttrlazyloading" alt="el_paso" 
+            data-bttrlazyloading-xs-src="txu-sanborn-el_paso-1927-xs.jpg"
+            data-bttrlazyloading-sm-src="txu-sanborn-el_paso-1927-sm.jpg" 
+            data-bttrlazyloading-md-src="txu-sanborn-el_paso-1927-md.jpg" 
+            data-bttrlazyloading-lg-src="txu-sanborn-el_paso-1927-lg.jpg" />
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-el_paso-1927-lg.jpg" alt="el_paso" /></noscript>
     </div><!-- /column -->
+    <footer class="state">
+        <div class="large-4 column">
+            <ul class="inline-list">
+                <li><a href="#cityindex" title="Back to Index"  class="ohover"><img src="stateicon.svg" alt="texas"></a></li>
+                <li><a href="../../index.html#mapcontainer" title="Sanborn Map" class="ohover"><img src="../img/usa.svg" alt="US MAP"></a></li>
+            </ul>
+        </div><!-- /column -->
+    </footer>
 </section>
+
 <script src="../../js/jquery-min.js"></script>
 <script src="../../js/jquery.tablesorter.min.js"></script>
-<script src="../../js/ready.js"></script>
+<script src="../../js/ready-min.js"></script>
+<script src="../../js/jquery.bttrlazyloading.min.js"></script>
 <script>
 	$(function(){
 		$("#cityTable").tablesorter();
 	});
+	$('.bttrlazyloading').bttrlazyloading();
 </script>    
 </body>
 </html>
