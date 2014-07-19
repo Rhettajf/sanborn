@@ -6,7 +6,7 @@
     <meta name="description" content="ITGM-715-OL">
     <meta name="author" content="Rhett Forbes">
     <meta name="viewport" content="width=device-width" />
-    <link href="../../css/sanborn-min.css" rel="stylesheet" type="text/css">
+    <link href="../../css/sanborn.css" rel="stylesheet" type="text/css">
 </head>
 <body id="state">
 <section id="cityindex" class="row">
@@ -144,12 +144,12 @@
     <div class="large-4 column">
         <h2>abilene</h2>
         
-        <img src="../img/placeholder.gif" class="bttrlazyloading" alt="abilene" 
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="bttrlazyloading" alt="abilene" 
             data-bttrlazyloading-xs-src="txu-sanborn-abilene-1929-xs.jpg"
             data-bttrlazyloading-sm-src="txu-sanborn-abilene-1929-sm.jpg" 
             data-bttrlazyloading-md-src="txu-sanborn-abilene-1929-md.jpg" 
             data-bttrlazyloading-lg-src="txu-sanborn-abilene-1929-lg.jpg" />
-        <noscript><img class="bttrlazyloading" src="txu-sanborn-abilene-1929-1200.jpg" alt="abilene" /></noscript>
+        <noscript><img class="bttrlazyloading" src="txu-sanborn-abilene-192-1200.jpg" alt="abilene" /></noscript>
     </div><!-- /column -->
     <footer class="state">
         <div class="large-4 column">
@@ -306,7 +306,9 @@
 	$(function(){
 		$("#cityTable").tablesorter();
 	});
-	$('.bttrlazyloading').bttrlazyloading();
+	$(".bttrlazyloading").bttrlazyloading({
+		threshold: 600
+	})
 </script>    
 </body>
 </html>

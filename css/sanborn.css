@@ -508,7 +508,7 @@ footer { margin-top:1em !important; }
 				width: 50%;
 				cursor: pointer;
 				display: inline-block;
-				opacity:0.75;
+				opacity:0.8;
 				-webkit-transition: all 0.4s ease-in-out;
 				-moz-transition: all 0.4s ease-in-out;
 				transition: all 0.4s ease-in-out;}
