@@ -578,7 +578,8 @@ footer { margin-top:1em !important; }
 /*  STATE PAGES */
 #state {}
 	#state section.row.city {
-		padding:1em 0 0 0;}
+		padding:1em 0 0 0;
+		position:relative;}
 		#state section.city img {
 			margin-top:0;
 			margin-bottom:0;
@@ -603,7 +604,11 @@ footer { margin-top:1em !important; }
 				filter: grayscale(0);
 				filter: none;}
 #state section.city footer {
-	position:absolute; bottom:0; left:0; width:100%;}
+	position:absolute; 
+	bottom:0; 
+	left:0; 
+	width:100%; 
+	display:table;}
 	#state section.city footer .inline-list {
 		margin: 0 auto 1em auto;}  	
 		#state section.city footer .inline-list > li {
@@ -886,7 +891,11 @@ nav.row { margin-top:1em;}
 	nav a {
 		border-style: solid;
 		border-width:1px;}
-		nav a, nav a.active:hover {font-size:1.5em;}	
+		nav a, nav a.active:hover {font-size:1.5em;}
+#state section.city footer .inline-list > li {
+		margin-right: 1em;
+		width:75px;
+		max-width:75px;}		
 .key, .compass.tiny { margin-top: 1em;}		
 }
 /* ========================================== RWD Medium and UP ==========================================================
@@ -960,6 +969,10 @@ nav a, nav a.active:hover {
 			-moz-box-shadow:    inset 5px -5px 2px rgba(0, 0, 0, 0.5);
 			-webkit-box-shadow: inset 5px -5px 2px rgba(0, 0, 0, 0.5);
 			box-shadow:         inset 5px -5px 2px rgba(0, 0, 0, 0.5); }
+#state section.city footer .inline-list > li {
+		margin-right: 1.375rem;
+		width:100px;
+		max-width:100px;}
 article { 
 	-webkit-column-count: 2; 
 	-webkit-column-rule: 1px solid #000; 
