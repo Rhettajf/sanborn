@@ -357,46 +357,44 @@ section.row {
 	color:rgba(0,0,0,0.4);
 	}
 /* HEADER */
-header {}
-	header.row {}
-	header img {}
-	/* TITLE */
-	header img.title {
+header { position:relative;}
+	header h1 {  
 		display: inline-block;
 		float: left;
-		left: 37.5%;
-		margin: 0 auto;
+		left: 35%;
+		margin:0 auto;
+		top:-16px;
 		position: absolute;
-		top: -1em;
-		width: 25%;}
-		/* TITLE FALLBACK */
-		header h1 {  
-			display: block;
-			float: left;
-			position: absolute;
-			top: 0;
-			left:0;
-			width: 100%; text-indent:-9999px}
-			header h1 a {
-				display:inline-block;
-				text-decoration:none;
-				text-transform:capitalize;
-				text-shadow:
-				-1px -1px 0 #000,  
-				1px -1px 0 #000,
-				-1px 1px 0 #000,
-				1px 1px 0 #000;
-				color:#000;}
-				header h1 a:hover {
-					color: #000;			
-					text-shadow:
-					3px 3px 0 #000,
-					-1px -1px 0 #000,  
-					1px -1px 0 #000,
-					-1px 1px 0 #000,
-					1px 1px 0 #000;
-					color:#F5BC31;}
-
+		width: 30%;
+		height:100%}
+		header h1 a { text-decoration:none;}
+		
+/* Sweet SVG TEXT TITLE */
+#svgtext { 
+	margin:0 auto; 
+	display:block;
+	max-width:100%;
+	font-size:100px;
+	font-weight:normal;
+	line-height:1;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.15);
+}
+#sanbornHatch {
+	stroke:#000; 
+	stroke-width:1;
+	fill:#000;}
+	
+#smc {
+	stroke:#222; 
+	text-anchor: middle; 
+	stroke-width:1;
+	filter:url(#dropshadow); 
+	fill: url(#sanbornHatch);}
+	a #smc:hover{
+		filter:url(#dropshadow); 
+		fill:#222; 
+		stroke:rgba(255,255,255,0.25);}
+	
 /* Article RWD Multiple Columns */
 article { 
 	width: 100%; 
