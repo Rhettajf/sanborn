@@ -991,6 +991,7 @@ article {
 	column-count: 2; 
 	column-rule: 1px solid #000;
 	column-gap:2em;}	
+	article figure {float:left;}	
 /* BORDER WRAPPER */			
 .brapper {
 	margin-left: 0.9375em;
