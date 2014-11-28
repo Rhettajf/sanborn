@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Sanborn Map Company</title>
-    <meta name="description" content="ITGM-715-OL">
-    <meta name="author" content="Rhett Forbes">
-    <meta name="viewport" content="width=device-width" />
-    <link href="css/sanborn-min.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<section id="legend" class="row">
-    <header class="row">
-        <div class="large-4 column">
-            <img src="img/head.svg" alt="header">
-            <h1>
-			<h1><a href="index.html" title="Sanborn Map Company"><svg id="svgtext" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 100" width="100%" height="100%"><style>#smc{filter:none;fill: url(#sanbornHatch);}a #smc:hover{filter:url(#dropshadow);}</style><defs><pattern id="sanbornHatch" width="2" height="2" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="2"/></pattern><filter id="dropshadow" x="0" y="0" width="100%" height="100%"><feOffset result="offOut" in="SourceAlpha" dx="2" dy="2"/><feGaussianBlur result="blurOut" in="offOut" stdDeviation="1"/><feBlend in="SourceGraphic" in2="blurOut" mode="normal"/></filter></defs><text id="smc" x="50%" y="40%">SMC</text></svg></a></h1>
-            <div class="tag">Sheet 3</div>
-        </div><!-- /column -->
-    </header>
-    <nav class="row">
-        <div class="large-1 medium-1 small-4 column"><a href="history.html" title="History">History</a></div>
-        <div class="large-1 medium-1 small-4 column"><a href="#" title="Legends" class="active">Legends</a></div>
-        <div class="large-1 medium-1 small-4 column"><a href="archive.html" title="Archive">Archives</a></div>
-        <div class="large-1 medium-1 small-4 column"><a href="resources.html" title="Resources">Resources</a></div>
-    </nav>
-    <div class="row"> 
+
+    <div class="row">
         <div class="large-4 column">
             <h2>Typographic LEGEND</h2>
             <img src="img/hr2.svg" alt="hr" class="hr">
@@ -50,9 +25,9 @@
                         </div><!-- /previews -->
                         <div class="controls"><a class="prev" data-action="prev" href="#"><img src="img/gal/prev_on.svg" alt="prev"></a><a class="next" data-action="next" href="#"><img src="img/gal/next_on.svg" alt="next"></a></div><!-- /controls -->
                     </div><!-- /carousel -->
-                </div><!-- /row collapse --> 
-                <div class="row collapse">         
-                <p>If you look closely at the images above you’ll find all kinds of letterforms that are rarely seen in today’s typeface designs. Sanborn's fire insurance enterprise produced not only produced excellent and detailed maps, but also maintained an elegant aesthetic in the headings &amp; legends of the maps themselves; especially in the covers of the city volumes. The maps and cover pages on this site represent a fantastic collection of rich typography and design from the late 1800s and early 1900s.</p> 
+                </div><!-- /row collapse -->
+                <div class="row collapse">
+                <p>If you look closely at the images above you’ll find all kinds of letterforms that are rarely seen in today’s typeface designs. Sanborn's fire insurance enterprise produced not only produced excellent and detailed maps, but also maintained an elegant aesthetic in the headings &amp; legends of the maps themselves; especially in the covers of the city volumes. The maps and cover pages on this site represent a fantastic collection of rich typography and design from the late 1800s and early 1900s.</p>
                 <p>It should be noted that most of these designs aren't "typography" in the strict sense, and would be more accurately described as "lettering". That is to say, they weren't made using fonts, with pre-designed letterforms. Instead, each letter or word was designed for that exact context, which is how they are able to make them so elaborately ornate and intertwined.</p>
                 <p>Founded in 1866 by Daniel Alfred Sanborn, a surveyor from Massachusetts, The Sanborn Company began making fire insurance maps in 1867. The company first gained recognition for the rich detail employed in the maps they produced in the 1800s, and today these archived maps are still widely used for research purposes. Sanborn still exists as a mapping and GIS company.</p>
                 <p>Old typography always fascinated me. These early maps were designed meticulously by hand and each design is unique and heavily influenced by the city and state they represent. If you look closely at the maps, you will see that no existing typefaces were used and you will find all kinds of known letter forms to draw inspiration from. Although this sort of artistic embellishment was unlikely to have increased map sales on its own, it's a charming addition made the purchasers feel a sense of pride and a little more secure about their own unique town and its people.</p>
@@ -62,15 +37,4 @@
             </article>
         </div><!-- /column -->
     </div><!-- /row -->
-    <footer class="row"> 
-        <div class="large-4 column">
-        <img src="img/headfoot.svg" alt="footer">
-            <p><small>&copy; 2014 <a href="http://rhettforbes.com/">Rhett A Forbes</a></small></p>
-        </div>
-    </footer>
-</section>
-<script src="js/jquery-min.js"></script>
-<script src="js/ready-min.js"></script>
-<script src="js/gal-min.js"></script>
-</body>
-</html>
+  
